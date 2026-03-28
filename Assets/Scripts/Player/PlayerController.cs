@@ -1,20 +1,16 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : Entity
 {
     public float PropellerForce;
     public float AngularForce;
-    public float MaxSpeed;
-
-    private Rigidbody2D m_Rigidbody;
 
     private InputAction m_MoveAction;
 
-    void Start()
+    protected override void Start()
     {
-        m_Rigidbody = GetComponent<Rigidbody2D>();
-
+        base.Start();
         m_MoveAction = InputSystem.actions.FindAction("Move");
     }
 
@@ -23,7 +19,6 @@ public class PlayerController : MonoBehaviour
 
         Vector2 moveValue = m_MoveAction.ReadValue<Vector2>();
         float moveAngle = Vector2.SignedAngle(transform.right, moveValue);
-        Debug.Log(transform.right);
 
         // Ajoute la force à l'hélice
         if (moveValue.magnitude > 0)
