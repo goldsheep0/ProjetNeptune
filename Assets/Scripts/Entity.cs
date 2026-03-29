@@ -24,7 +24,8 @@ public class Entity : MonoBehaviour
     protected virtual void Die()
     {
         GetComponent<Collider2D>().enabled = false;
-        Debug.Log(gameObject.name + " died !");
+        if (GetComponent<SpriteRenderer>() != null)
+            GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0.35f);
         Invoke(nameof(DestroyGameObject), 1f);
     }
 
