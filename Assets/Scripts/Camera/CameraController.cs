@@ -12,7 +12,7 @@ public class CameraController : MonoBehaviour
         m_Player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    void Update()
+    void FixedUpdate()
     {
         Vector2 playerVelocity = m_Player.GetComponent<Rigidbody2D>().linearVelocity;
         Vector3 velocityModifier = new Vector3(playerVelocity.x, playerVelocity.y) * velocityScale;

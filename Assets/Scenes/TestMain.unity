@@ -697,6 +697,26 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3855830565994649828, guid: a11b33c24e449f942bd0d136bd707039, type: 3}
+      propertyPath: MaxChargeTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855830565994649828, guid: a11b33c24e449f942bd0d136bd707039, type: 3}
+      propertyPath: ShootForceMax
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855830565994649828, guid: a11b33c24e449f942bd0d136bd707039, type: 3}
+      propertyPath: ShootForceMin
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855830565994649828, guid: a11b33c24e449f942bd0d136bd707039, type: 3}
+      propertyPath: ShootingCooldown
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7721619135690804046, guid: a11b33c24e449f942bd0d136bd707039, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

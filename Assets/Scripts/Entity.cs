@@ -5,10 +5,10 @@ public class Entity : MonoBehaviour
 {
     public float Health;
 
-    protected Rigidbody2D m_Rigidbody;
+    protected Rigidbody2D m_rigidbody;
     protected virtual void Start()
     {
-        m_Rigidbody = GetComponent<Rigidbody2D>();
+        m_rigidbody = GetComponent<Rigidbody2D>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
